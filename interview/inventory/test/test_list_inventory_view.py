@@ -22,14 +22,12 @@ def test_inventory_list(api_client):
         metadata={"key": "value"},
         language=language,
         type=type,
-        created_at="2025-01-01",
     )
     later_date_inventory = Inventory.objects.create(
         name="Inventory 2",
         metadata={"key": "value"},
         language=language,
         type=type,
-        created_at="2025-01-02",
     )
     tomorrow = datetime.datetime.now() + datetime.timedelta(days=1)
     later_date_inventory.created_at = tomorrow
