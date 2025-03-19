@@ -1,0 +1,8 @@
+*.conda
+*.history
+*__pycache__*
+*.vscode
+ANSWER.md
+*.env
+*reset_database.sh
+*.venv*
