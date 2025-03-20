@@ -28,11 +28,14 @@ SECRET_KEY = '#lz1-_pf78xg3qxohts(mo^vt^0z0q3d8fm7em=nz#2is_)saz'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+AUTH_USER_MODEL = 'profiles.UserProfile'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media/'
 
 # Application definition
 
 INSTALLED_APPS = [
+    'profiles',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
