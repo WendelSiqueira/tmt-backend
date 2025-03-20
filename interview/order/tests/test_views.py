@@ -41,7 +41,6 @@ def create_orders():
         embargo_date="2025-02-01",
     )
     order_2.tags.set([order_tag_2])
-    print(order_2.pk, order_2.tags.all())
 
 
 @pytest.mark.django_db
