@@ -113,6 +113,5 @@ def create_orders():
 def test_order_on_tags(api_client, create_orders, pk, expected_response):
     url = reverse("tag-order-detail", kwargs={"pk": pk})
     response = api_client.get(url)
-    print(response.json())
     assert response.status_code == status.HTTP_200_OK
     assert response.json() == expected_response
